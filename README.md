@@ -31,7 +31,7 @@ Compare the execution time of these algorithms for finding both an existing subs
 ### Results
 
 ```bash
-Execution times for Article 1:
+Execution time for Article 1:
 --------------+------------------------+------------------------
   Algorithm   |   Existing substring   | Not existing substring
 --------------+------------------------+------------------------
@@ -40,7 +40,7 @@ Boyer-Moore   |      0.00036 sec       |      0.00047 sec
 Rabin-Karp    |      0.00322 sec       |      0.00646 sec
 --------------+------------------------+------------------------
 
-Execution times for Article 2:
+Execution time for Article 2:
 --------------+------------------------+------------------------
   Algorithm   |   Existing substring   | Not existing substring
 --------------+------------------------+------------------------
@@ -52,9 +52,10 @@ Rabin-Karp    |      0.00493 sec       |      0.00710 sec
 
 ### Conclusions
 
-**Boyer-Moore** is the fastest algorithm for both existing and non-existent substrings in both texts, due to its effective use of "bad character" and "good suffix" heuristics that skip irrelevant sections of the text.
-**KMP** showed stable results but was slower than Boyer-Moore, particularly for non-existent substrings, likely due to its reliance on pattern preprocessing.
-**Rabin-Karp** was the least efficient, especially for non-existent substrings, as its hashing-based approach is less optimal for large texts and mismatches.
+- **Boyer-Moore** is the fastest algorithm for both existing and non-existent substrings in both texts, due to its effective use of "bad character" and "good suffix" heuristics that skip irrelevant sections of the text.
+
+- **KMP** showed stable results but was slower than Boyer-Moore, particularly for non-existent substrings, likely due to its reliance on pattern preprocessing
+- **Rabin-Karp** was the least efficient, especially for non-existent substrings, as its hashing-based approach is less optimal for large texts and mismatches.
 
 ### Running the Code
 

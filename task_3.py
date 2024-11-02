@@ -51,7 +51,7 @@ def main():
 
     # Print results
     for article, data in results.items():
-        print(f"\nExecution times for {article}:")
+        print(f"\nExecution time for {article}:")
         print('-' * 14 + '+' + '-' * 24 + '+' + '-' * 24)
         print(f"{"Algorithm":^14}|{"Existing substring":^24}|"
               f"{"Not existing substring":^24}")
